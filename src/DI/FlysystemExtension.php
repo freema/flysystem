@@ -29,7 +29,7 @@ class FlysystemExtension extends CompilerExtension
 		'autowired' => false,
 	];
 
-	public function loadConfiguration(): void
+	public function loadConfiguration()
 	{
 		$config = $this->validateConfig($this->defaults);
 		$builder = $this->getContainerBuilder();
